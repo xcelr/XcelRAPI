@@ -1,0 +1,55 @@
+{
+  "name": "insight-api",
+  "description": "A xcelr blockchain REST and web socket API service for xclcore Node.",
+  "version": "1.0.3",
+  "repository": "git://github.com/XcelRExplorer/insight-api.git",
+  "contributors": [
+    {
+      "name": "Under",
+      "email": ""
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/XcelRExplorer/insight-api/issues"
+  },
+  "homepage": "https://github.com/XcelRExplorer/insight-api",
+  "license": "MIT",
+  "keywords": [
+    "insight",
+    "insight api",
+    "blockchain",
+    "xcelr api",
+    "blockchain api",
+    "json",
+    "xclcore"
+  ],
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha -R spec --recursive"
+  },
+  "main": "lib",
+  "xclcoreNode": "lib",
+  "dependencies": {
+    "async": "*",
+    "bignumber.js": "^4.0.2",
+    "body-parser": "^1.13.3",
+    "compression": "^1.6.1",
+    "lodash": "^2.4.1",
+    "lru-cache": "^4.0.1",
+    "mongoose": "^5.1.4",
+    "morgan": "^1.7.0",
+    "xclcore-lib": "XcelRExplorer/xclcore-lib",
+    "xclcore-message": "XcelRExplorer/xclcore-message",
+    "request": "^2.83.0"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "proxyquire": "^1.7.2",
+    "should": "^8.3.1",
+    "sinon": "^1.10.3"
+  }
+}
